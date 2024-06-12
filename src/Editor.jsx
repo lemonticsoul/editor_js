@@ -3,6 +3,8 @@ import EditorJS from "@editorjs/editorjs";
 import { ImageBlock } from "./customBlocks/Image/ImageBlock";
 import "./customBlocks/Image/ImageBlock.css";
 import { ChartBlock } from "./customBlocks/Chart/ChartBlock";
+import { ReportBlock} from "./customBlocks/Report/ReportBlock";
+import { FinanceBlock} from "./customBlocks/finance/FinanceBlock";
 
 const Editor = () => {
   const ejInstance = useRef();
@@ -20,6 +22,8 @@ const Editor = () => {
       tools: {
         image: ImageBlock,
         chart: ChartBlock,
+        analystReport: ReportBlock,
+        finance: FinanceBlock
       },
     });
   };
